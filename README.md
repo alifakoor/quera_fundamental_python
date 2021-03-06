@@ -1,2 +1,2 @@
-# quera
- practices of quera college's courses
+# quera fundamental python
+ practices of quera college's course, fundamental python
