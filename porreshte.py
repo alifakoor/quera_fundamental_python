@@ -9,7 +9,7 @@ for i in range(n):
         index_str = [char for char in strings[int(command[1])-1]]
         s = command[3]
         result = 0
-        for j in range(len(index_str)-1):
+        for j in range(len(index_str)):
             helper = []
             for k in range(len(s)):
                 if k+j < len(index_str):
