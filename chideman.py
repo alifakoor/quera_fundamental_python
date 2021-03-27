@@ -1,6 +1,14 @@
-n = int(input())
-average = 0
-for i in range(n):
+def f(n1):
+    global sm, ans
+    if n1 == 0:
+        return
     x = int(input())
-    average += x
-print(int(average/n))
+    sm += x
+    f(n1 - 1)
+    if x > sm // n:
+        ans += x - sm // n
+ans = 0
+sm = 0
+n = int(input())
+f(n)
+print(ans)

@@ -23,7 +23,9 @@ for i in range(n):
             answer = min(answer, abs(numbers[p] - numbers[i]))
             break
         p += 1
-if answer == 999999999999 or answer == 0:
+if k == 1:
+    print(0)
+elif answer == 999999999999 or answer == 0:
     print(-1)
 else:
     print(answer)
